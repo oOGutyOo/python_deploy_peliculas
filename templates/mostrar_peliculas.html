@@ -1,0 +1,15 @@
+<!-- mostrar_peliculas.html-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cartelera</title>
+</head>
+<body>
+    <h1>Lista de Peliculas</h1>
+    <ul>
+        {% for pelicula in peliculas %}
+            <li>{{ pelicula.titulo }} - {{ pelicula.descripcion }} - {{pelicula.hhorario }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
